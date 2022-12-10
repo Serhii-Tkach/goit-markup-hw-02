@@ -1,0 +1,103 @@
+/* Color styles */
+
+/* Body
+White #FFFFFF */
+
+/* Primary Brand 
+Iris #4D5AE5 */
+
+/* Dark 
+Navy blue #2E2F42 */
+
+/* Success 
+GREEN #31D0AA */
+
+/* Text 
+SLATE #434455 */
+
+/* Subtle Text 
+LIGHT SLATE #8E8F99 */
+
+/* Accent 
+cornflower #E7E9FC */
+
+/* Light 
+CLOUD #F4F4FD */
+
+/* Фон всієї сторінки */
+.page-body {
+    background-color: #ffffff;
+    color: #2E2F42;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Логотип */
+.logo {
+    color: #2E2F42;
+}
+
+.first-logo {
+    color: #4D5AE5;
+}
+
+/* Навігація */
+.site-nav a {
+    color: #2E2F42;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #434455;
+}
+
+/* Контакти */
+.contact a {
+    color: #434455;
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: #4D5AE5;
+}
+
+/* Герой */
+.hero {
+    background-color: #2E2F42;
+    color: #FFFFFF;
+}
+
+.button {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+}
+
+/* Опис */
+.description p {
+    color: #434455;
+}
+
+/* Команда */
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-card li {
+    background-color: #ffffff;
+}
+
+/* Foother */
+footer {
+    background-color: #2E2F42;
+    color: #E7E9FC;
+}
+
+.logo-foother {
+    color: #F4F4FD;
+}
+
+.first-logo {
+    color: #4D5AE5;
+}
