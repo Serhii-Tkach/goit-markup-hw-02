@@ -101,3 +101,28 @@ footer {
 .first-logo {
     color: #4D5AE5;
 }
+
+/* Portfolio filter buttons */
+.filter-buttons button {
+    background-color: #F4F4FD;
+    color: #4D5AE5;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:focus {
+    background-color: #4D5AE5;
+    color: #ffffff;  
+}
+
+/* Portfolio cards */
+.project-card li {
+    background-color: #F4F4FD;
+}
+
+.project-card p {
+    color: #434455;
+}
+
+.card-text {
+    color: #F4F4FD;
+}
