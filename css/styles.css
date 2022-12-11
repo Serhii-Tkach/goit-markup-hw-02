@@ -24,10 +24,17 @@ cornflower #E7E9FC */
 /* Light 
 CLOUD #F4F4FD */
 
+:root {
+    --primary-brand-color: #4D5AE5;
+    --title-text-color: #2E2F42;
+    --description-text-color: #434455;
+    --background-light-color: #F4F4FD;
+}
+
 /* Фон всієї сторінки */
 .page-body {
     background-color: #ffffff;
-    color: #2E2F42;
+    color: var(--title-text-color);
 }
 
 .list {
@@ -36,16 +43,18 @@ CLOUD #F4F4FD */
 
 /* Логотип */
 .logo {
-    color: #2E2F42;
+    color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .first-logo {
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
 }
 
 /* Навігація */
 .site-nav a {
-    color: #2E2F42;
+    color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -55,33 +64,50 @@ CLOUD #F4F4FD */
 
 /* Контакти */
 .contact a {
-    color: #434455;
+    color: var(--description-text-color);
+    text-decoration: none;
 }
 
 .contact a:hover,
 .contact a:focus {
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
 }
 
 /* Герой */
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--title-text-color);
     color: #FFFFFF;
 }
 
 .button {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: var(--title-text-color);
+}
+
+.button.primary {
+   background-color: var(--primary-brand-color);
+   color: #ffffff; 
+}
+
+.button.secondary {
+    background-color: var(--background-light-color);
+    color: var(--primary-brand-color);
+}
+
+.secondary:hover,
+.secondary:focus {
+    background-color: var(--primary-brand-color);
+    color: var(--background-light-color);
 }
 
 /* Опис */
 .description p {
-    color: #434455;
+    color: var(--description-text-color);
 }
 
 /* Команда */
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--background-light-color);
 }
 
 .team-card li {
@@ -90,37 +116,22 @@ CLOUD #F4F4FD */
 
 /* Foother */
 footer {
-    background-color: #2E2F42;
+    background-color: var(--title-text-color);
     color: #E7E9FC;
 }
 
 .logo-foother {
-    color: #F4F4FD;
+    color: var(--background-light-color);
+    text-decoration: none;
 }
 
 .first-logo {
-    color: #4D5AE5;
-}
-
-/* Portfolio filter buttons */
-.filter-buttons button {
-    background-color: #F4F4FD;
-    color: #4D5AE5;
-}
-
-.filter-buttons button:hover,
-.filter-buttons button:focus {
-    background-color: #4D5AE5;
-    color: #ffffff;  
+    color: var(--primary-brand-color);
 }
 
 /* Portfolio cards */
-.project-card li {
-    background-color: #F4F4FD;
-}
-
-.project-card p {
-    color: #434455;
+.project-cards p {
+    color: var(--description-text-color);
 }
 
 .card-text {
