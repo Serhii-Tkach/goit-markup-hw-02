@@ -104,6 +104,8 @@ text-align: center;
 .button {
     background-color: #FFFFFF;
     color: var(--title-text-color);
+
+    cursor: pointer;
     
     font-family: Roboto;
     font-weight: 600;
