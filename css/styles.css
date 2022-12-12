@@ -47,6 +47,10 @@ CLOUD #F4F4FD */
     list-style: none;
 }
 
+.list a {
+    text-decoration: none;
+}
+
 /* Логотип */
 .logo {
     color: var(--title-text-color);
