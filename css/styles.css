@@ -25,29 +25,51 @@ cornflower #E7E9FC */
 CLOUD #F4F4FD */
 
 :root {
+    /* Colors */
     --primary-brand-color: #4D5AE5;
     --title-text-color: #2E2F42;
     --description-text-color: #434455;
     --background-light-color: #F4F4FD;
+
+    /* Body */
+    --font-weight-body: 600;
+    --line-height-body: 1.5;
+    --letter-spacing-body: 0.02em;
+
+    /* Logo */
+    --font-weight-logo: 800;
+    --font-size-logo: 18px;
+    --line-height-logo: 1.33;
+    --letter-spacing-logo: 0.03;
+
+    /* Buttons */
+    --font-family-button: Roboto;
+    --font-weight-button: 600;
+    --line-height-button: 1.5;
+    --align-items-button: center;
+    --letter-spacing-button: 0.04em;
+
+    /* Section title */
+    --font-size-section-title: 36px;
+    --line-height-section-title: 1.11;
 }
 
 /* Фон всієї сторінки */
-.page-body {
+body {
     background-color: #ffffff;
     color: var(--title-text-color);
 
     font-family: Roboto, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
 }
 
 .list {
     list-style: none;
 }
 
-.list a {
+.nav-title {
     text-decoration: none;
 }
 
@@ -57,10 +79,10 @@ CLOUD #F4F4FD */
     text-decoration: none;
 
     font-family: Raleway, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
+    line-height: var(--line-height-logo);
+    letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
  
 }
@@ -70,26 +92,26 @@ CLOUD #F4F4FD */
 }
 
 /* Навігація */
-.site-nav a {
+.nav-title {
     color: var(--title-text-color);
     text-decoration: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.nav-title:hover,
+.nav-title:focus {
     color: #434455;
 }
 
 /* Контакти */
-.contact a {
+.contact-description {
     color: var(--description-text-color);
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
 }
 
-.contact a:hover,
-.contact a:focus {
+.contact-description:hover,
+.contact-description:focus {
     color: var(--primary-brand-color);
 }
 
@@ -111,12 +133,11 @@ text-align: center;
 
     cursor: pointer;
     
-    font-family: Roboto;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    letter-spacing: 0.04em;
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button);
+    align-items: var(--align-items-button);
+    letter-spacing: var(--letter-spacing-button);
 }
 
 .button-order {
@@ -141,19 +162,25 @@ text-align: center;
 
 /* Section name */
 .section-title {
-    font-size: 36px;
-    line-height: 1.11;
+    font-size: var(--font-size-section-title);
+    line-height: var(--line-height-section-title);
     text-align: center;
     text-transform: capitalize;
 }
 
-/* Цінності команди */
-.description h3 {
-    font-size: 20px;
-    line-height: 1.2px;
+/* Secret name */
+.secret-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
-.description p {
+.description-text {
     color: var(--description-text-color);
 
     font-weight: 400;
@@ -164,7 +191,7 @@ text-align: center;
     background-color: var(--background-light-color);
 }
 
-.description-team li {
+.team-color {
     background-color: #ffffff;
 }
 
@@ -179,10 +206,10 @@ footer {
     text-decoration: none;
 
     font-family: Raleway, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
 }
 
@@ -190,15 +217,25 @@ footer {
     color: var(--primary-brand-color);
 }
 
-footer p {
+.footer-description {
 font-weight: 400;
 }
 
-/* Portfolio cards */
-.project-cards p {
-    color: var(--description-text-color);
+/* Project cards */
+.card-link {
+    text-decoration: none;
 }
 
-.card-text {
-    color: #F4F4FD;
+.name {
+    color: var(--title-text-color);
+
+    font-size: 20px;
+    line-height: 1.2px;
 }
+
+.filter-name {
+    color: var(--description-text-color);
+
+    font-weight: 400;
+}
+
