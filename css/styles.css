@@ -180,7 +180,8 @@ text-align: center;
     clip: rect(0 0 0 0);
 }
 
-.description-text {
+.description-text,
+.filter-name {
     color: var(--description-text-color);
 
     font-weight: 400;
@@ -232,10 +233,3 @@ font-weight: 400;
     font-size: 20px;
     line-height: 1.2px;
 }
-
-.filter-name {
-    color: var(--description-text-color);
-
-    font-weight: 400;
-}
-
