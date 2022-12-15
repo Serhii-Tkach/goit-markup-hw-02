@@ -196,7 +196,7 @@ text-align: center;
 }
 
 /* Foother */
-footer {
+.footer {
     background-color: var(--title-text-color);
     color: #E7E9FC;
 }
